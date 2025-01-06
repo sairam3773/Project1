@@ -1,0 +1,172 @@
+body{
+    margin:0px;}
+.main{
+    margin-left: 20px;
+    margin-right: 20px;}
+h1{
+    text-align: center;
+    color: white;
+    background-color: hsl(240, 100%, 25%);
+    padding:20px;
+    margin: 0px;}
+.navbar ul{
+    list-style-type: none; 
+    background-color: hsl(240, 100%, 25%);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    overflow: hidden;}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;}
+.navbar a:hover{
+    background-color: hsl(240, 100%, 10%);}
+.navbar li{
+    float: left;}
+.container{
+    display: flex;
+    justify-content: space-evenly;}
+.heading{ 
+    color: white;
+    background-color: blue;
+    padding: 20px 20px;
+    text-align: center;
+    overflow: hidden;}
+.headin{
+    color:black;
+    background-color:white;
+    padding:0px 0px ;
+    text-align: center;
+    overflow: hidden;}
+.ipl li{
+    padding: 10px 10px;
+    color: white;
+    list-style-type: none;
+    border: 1px solid white;
+    background-color:hsl(197, 96%, 28%);}
+.ipl ul{
+    padding:0 ;}
+.bat{
+    width: 50%;
+    float: left;
+    text-align: center;}
+.ar{
+    width: 50%;
+    float: right;
+    text-align: center;}
+.pace{
+    width: 50%;
+    float: left;
+    text-align: center;}
+.spin{
+    width: 50%;
+    float:right;
+    text-align: center;}
+.wk{
+    text-align: center;}
+.dashboard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 780px;
+    margin: auto;
+    padding:30px;}
+.folder {
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 29);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;}
+.folder-img {
+    width: 100px;
+   border-radius: 8px;
+    margin-right: px;
+    object-fit: cover;}
+.folder-name {
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+    text-align: center;}
+.folder-img:hover{
+    scale: 1.1;
+}
+.folder-name a{
+    text-decoration: none;
+    color: black;}
+.folder-name a:hover{
+    color: rgb(65, 64, 64);
+    font-size: 19px;}
+.downnav ul{
+    list-style-type: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    overflow: hidden;
+}
+.downnav a{
+    padding:5px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.downnav a:hover{
+    background-color: hsl(0, 0%, 30%);
+    font-size: 15px;
+}
+h1>a{
+    text-decoration: none;
+    color: white;
+}
+.mycontent{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mycontent a{
+    text-decoration: none;
+    font-weight: bold;
+    color: navy;
+}
+@media screen and (max-width: 430px){
+    .dashboard{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(350px, 1fr));
+        width: 200px; 
+        gap: 10px;
+        float: left;
+    }
+    .navbar ul {
+        width: 100%;
+        overflow: hidden;
+    }
+    .downnav{
+        width: 100%;
+        float: left;
+    }
+    
+}
+@media screen and (max-width: 1024px){
+        .dashboard{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(350px, 1fr));
+            width: 200px; 
+            gap: 20px;
+            float: left;
+        }
+        .navbar ul {
+            width: 100%;
+            overflow: hidden;
+        }
+        .downnav{
+            width: 100%;
+            float: left;
+        }
+        }
